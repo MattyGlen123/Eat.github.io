@@ -34,7 +34,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.8), rgba(181, 105, 105, 0.8)), url(images/asia-carrot-chopsticks-357756.jpg);
+  background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.8), rgba(181, 105, 105, 0.8)), url(../images/asia-carrot-chopsticks-357756.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
