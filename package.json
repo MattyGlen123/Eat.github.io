@@ -1,0 +1,22 @@
+{
+  "name": "eat",
+  "version": "1.0.0",
+  "description": "a page full of my favourite recipes",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattyGlen123/Eat.github.io.git"
+  },
+  "author": "Matty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattyGlen123/Eat.github.io/issues"
+  },
+  "homepage": "https://github.com/MattyGlen123/Eat.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}

@@ -1,9 +1,7 @@
-/* 
-very light blue  #e8edf3
-dark yellow      #e6cf8b
-salmon           #b56969
-navy             #22264b 
-*/
+$color-primary: #22264b; // navy
+$color-secondary: #b56969; //salmon
+$color-tertiary: #e6cf8b; // dark yellow
+$color-light: #e8edf3; // very light blue
 
 *,
 *::after,
@@ -21,7 +19,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  background-color: #e8edf3;
+  background-color: $color-light;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -30,23 +28,23 @@ body {
   position: absolute;
   top: 10%;
   left: 5rem;
-  background-color: #e6cf8b;
+  background-color: $color-tertiary;
   padding: 1rem;
   border-radius: 100%;
-  border: .5rem solid #b56969;
+  border: .5rem solid $color-secondary;
 }
 
 .logo-box__logo {
   font-size: 3rem;
-  color: #b56969;
+  color: $color-secondary;
 }
 
 .header {
   height: 95vh;
   background-image: linear-gradient( 
     to right bottom,
-    rgba(34, 38, 75, 0.8),
-    rgba(181, 105, 105, 0.8)), 
+    rgba($color-primary, 0.8),
+    rgba($color-secondary, 0.8)), 
     url(images/asia-carrot-chopsticks-357756.jpg);
   background-size: cover;
   background-position: top;
@@ -63,7 +61,7 @@ body {
 }
 
 .heading-primary {
-  color: #e8edf3;
+  color: $color-light;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -148,7 +146,7 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
+  background-color: $color-light;
   color: #777;
 }
 
@@ -185,4 +183,3 @@ body {
     transform: translateY(0);
   }
 }
-
