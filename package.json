@@ -4,7 +4,7 @@
   "description": "a page full of my favourite recipes",
   "main": "script.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
   },
   "repository": {
     "type": "git",
