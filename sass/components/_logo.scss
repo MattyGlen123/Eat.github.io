@@ -1,0 +1,17 @@
+.logo-box { /* Adjust with media querys */
+  background-color: $color-tertiary;
+  padding: 1rem;
+  border-radius: 100%;
+  border: .5rem solid $color-secondary;
+
+  &__logo {
+    font-size: 3rem;
+    color: $color-secondary;
+  }
+
+  &--position {
+    position: absolute;
+    top: 10%;
+    left: 5rem;
+  } 
+}
