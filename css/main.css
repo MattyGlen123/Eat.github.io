@@ -8,60 +8,10 @@
 
 html {
   font-size: 62.5%;
-  /* equivalent to 10px */ }
+  /* equivalent to 10px = 1rem */ }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  background-color: #e8edf3;
-  margin: 3rem;
   box-sizing: border-box; }
-
-.logo-box {
-  /* Adjust with media querys */
-  position: absolute;
-  top: 10%;
-  left: 5rem;
-  background-color: #e6cf8b;
-  padding: 1rem;
-  border-radius: 100%;
-  border: 0.5rem solid #b56969; }
-  .logo-box__logo {
-    font-size: 3rem;
-    color: #b56969; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.8), rgba(181, 105, 105, 0.8)), url(../images/asia-carrot-chopsticks-357756.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%); }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-.heading-primary {
-  color: #e8edf3;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation: moveInLeft 1s ease-in; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.4rem;
-    animation: moveInRight 1s ease-in; }
 
 @keyframes moveInLeft {
   0% {
@@ -82,6 +32,21 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+
+@keyframes moveInBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  background-color: #e8edf3;
+  margin: 3rem; }
 
 .btn--animate {
   animation: moveInBtn .5s ease-in .75s;
@@ -125,10 +90,48 @@ body {
   z-index: -1;
   transition: all .4s; }
 
-@keyframes moveInBtn {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
+.logo-box {
+  /* Adjust with media querys */
+  background-color: #e6cf8b;
+  padding: 1rem;
+  border-radius: 100%;
+  border: 0.5rem solid #b56969; }
+  .logo-box__logo {
+    font-size: 3rem;
+    color: #b56969; }
+  .logo-box--position {
+    position: absolute;
+    top: 10%;
+    left: 5rem; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.8), rgba(181, 105, 105, 0.8)), url(../images/asia-carrot-chopsticks-357756.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%); }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.heading-primary {
+  color: #e8edf3;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-in; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.4rem;
+    animation: moveInRight 1s ease-in; }
