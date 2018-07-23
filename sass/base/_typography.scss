@@ -24,8 +24,16 @@ body {
 
 .heading-tertiary {
   font-size: $default-font-size;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
+}
+
+.heading-hell {
+  color: $color-hell;
+}
+
+.heading-heaven {
+  color: $color-heaven;
 }
 
 .paragraph {

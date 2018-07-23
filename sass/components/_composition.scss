@@ -25,11 +25,37 @@
       top: 12rem;
     }
 
+    &--p4 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &--p5 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &--p6 {
+      left: 15%;
+      top: 12rem;
+    }
+
     &:hover {
-      outline: 1.5rem solid $color-tertiary;
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .6);
       z-index: 2;
+    }
+
+    &--p1:hover,
+    &--p2:hover,
+    &--p3:hover {
+      outline: 1.5rem solid $color-heaven;
+    }
+
+    &--p4:hover,
+    &--p5:hover,
+    &--p6:hover {
+      outline: 1.5rem solid darken($color-hell, 10%);
     }
 
   }

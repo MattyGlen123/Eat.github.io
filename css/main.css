@@ -66,8 +66,14 @@ body {
 
 .heading-tertiary {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase; }
+
+.heading-hell {
+  color: #FF0005; }
+
+.heading-heaven {
+  color: #FFBE0B; }
 
 .paragraph {
   font-size: 1.8rem; }
@@ -134,8 +140,9 @@ body {
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #22264b;
-  padding: 3px;
-  transition: all .2s; }
+  padding: 3px 5px;
+  transition: all .2s;
+  border-radius: 5px; }
 
 .btn-text:hover {
   background-color: #22264b;
@@ -166,11 +173,23 @@ body {
     .composition__photo--p3 {
       left: 15%;
       top: 12rem; }
+    .composition__photo--p4 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p5 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p6 {
+      left: 15%;
+      top: 12rem; }
     .composition__photo:hover {
-      outline: 1.5rem solid #e6cf8b;
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
       z-index: 2; }
+    .composition__photo--p1:hover, .composition__photo--p2:hover, .composition__photo--p3:hover {
+      outline: 1.5rem solid #FFBE0B; }
+    .composition__photo--p4:hover, .composition__photo--p5:hover, .composition__photo--p6:hover {
+      outline: 1.5rem solid #cc0004; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
@@ -191,6 +210,13 @@ body {
     background-image: linear-gradient(to right, #777fc2, #b56969);
     -webkit-background-clip: text;
     color: transparent; }
+
+.heading-seperator {
+  text-align: center;
+  margin: 25px auto;
+  height: 5px;
+  width: 30rem;
+  background-color: #b56969; }
 
 .logo-box {
   /* Adjust with media querys */
@@ -264,13 +290,13 @@ body {
 
 .section-about {
   background-color: #e8edf3;
-  padding: 25rem 0; }
+  padding: 20rem 0 25rem; }
 
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.5), rgba(181, 105, 105, 0.5)), url(../../images/cake-chocolate-chocolate-cake-132694.jpg);
   background-size: cover;
-  margin-top: -10rem;
+  margin-top: 20rem;
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
