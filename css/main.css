@@ -44,6 +44,17 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes swingArrow {
+  0% {
+    transform: rotate(60deg);
+    color: #FFBE0B; }
+  50% {
+    transform: rotate(-60deg);
+    color: #FF0005; }
+  100% {
+    transform: rotate(60deg);
+    color: #FFBE0B; } }
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -91,6 +102,11 @@ body {
 
 .u-margin-bottom-lrg {
   margin-bottom: 8rem; }
+
+.heading__arrow {
+  font-size: 5rem;
+  transform-origin: top;
+  animation: swingArrow 8s infinite; }
 
 .btn--animate {
   animation: moveInBtn .5s ease-in .75s;
@@ -202,7 +218,8 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
   transition: transform .2s; }
   .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
+    transform: translateY(-1.5rem) scale(1.03);
+    background-color: #e6cf8b; }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
