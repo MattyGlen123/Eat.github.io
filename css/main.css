@@ -65,7 +65,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #777fc2, #22264b);
+  background-image: linear-gradient(to right, #d7adad, #b56969);
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
@@ -123,14 +123,14 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   .btn:hover::after {
     transform: scale(1.5);
     opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
 
 .btn--white {
   background-color: #e8edf3;
@@ -163,18 +163,49 @@ body {
 .btn-text:hover {
   background-color: #22264b;
   color: #e8edf3;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
 .btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    font-size: 3rem;
+    height: 50rem;
+    transition: all .8s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: white; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #acf5f4, #17BEBB); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #cee0ba, #698F3F); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #f29fd2, #AE1774); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 .composition {
   position: relative; }
   .composition__photo {
     width: 60%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     border-radius: 2px;
     position: absolute;
     z-index: 1;
@@ -200,7 +231,7 @@ body {
       top: 12rem; }
     .composition__photo:hover {
       transform: scale(1.05);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       z-index: 2; }
     .composition__photo--p1:hover, .composition__photo--p2:hover, .composition__photo--p3:hover {
       outline: 1.5rem solid #FFBE0B; }
@@ -215,7 +246,7 @@ body {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .2s; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03);
@@ -230,7 +261,7 @@ body {
 
 .heading-seperator {
   text-align: center;
-  margin: 25px auto;
+  margin: 50px auto;
   height: 5px;
   width: 30rem;
   background-color: #b56969; }
@@ -305,7 +336,7 @@ body {
     letter-spacing: 1.4rem;
     animation: moveInRight 1s ease-in; }
 
-.section-about {
+.section-hell-heaven {
   background-color: #e8edf3;
   padding: 20rem 0 25rem; }
 
@@ -317,3 +348,7 @@ body {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-recipes {
+  background-color: #e8edf3;
+  padding: 20rem 0 25rem; }

@@ -3,9 +3,13 @@
 $color-primary: #22264b; // navy
 $color-secondary: #b56969; //salmon
 $color-tertiary: #e6cf8b; // dark yellow
+$color-fourth: #AE1774;
+$color-fifth: #17BEBB;
+$color-sixth: #698F3F;
 $color-light: #e8edf3; // very light blue
 $color-black: #000;
 $color-grey: #777;
+
 $color-hell: #FF0005;
 $color-heaven: #FFBE0B;
 
@@ -18,3 +22,7 @@ $default-font-size: 1.8rem;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+// Box Shadow
+
+$box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
