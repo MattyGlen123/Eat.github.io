@@ -58,15 +58,15 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      background-image: linear-gradient( to right top, lighten($color-fifth, 40%), $color-fifth),url(../../images/eggs-benidict.jpeg);
+      background-image: linear-gradient( to right top, lighten($color-fifth, 40%), $color-fifth),url(../images/eggs-benidict.jpeg);
     }
 
     &--2 {
-      background-image: linear-gradient( to right bottom, lighten($color-sixth, 40%), $color-sixth), url(../../images/chicken.jpeg);
+      background-image: linear-gradient( to right bottom, lighten($color-sixth, 40%), $color-sixth), url(../images/chicken.jpeg);
     }
     
     &--3 {
-      background-image: linear-gradient( to right bottom, lighten($color-fourth, 40%), $color-fourth), url(../../images/brownie-dessert-cake-sweet-45202.jpeg);
+      background-image: linear-gradient( to right bottom, lighten($color-fourth, 40%), $color-fourth), url(../images/brownie-dessert-cake-sweet-45202.jpeg);
     }
 
   }
