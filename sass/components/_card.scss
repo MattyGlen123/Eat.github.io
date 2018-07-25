@@ -1,11 +1,13 @@
 .card {
+
+  //For Functionality, cards which turn on hover
+
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem;
 
   &__side {
-    font-size: 3rem;
     height: 50rem;
     transition: all .8s ease-in-out;
     position: absolute;
@@ -13,7 +15,8 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: 10px;
+    overflow: hidden;
     box-shadow: $box-shadow;
 
     &--front {
@@ -38,10 +41,90 @@
   }
 
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  //Front side of card styling
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: color-burn;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient( to right top, lighten($color-fifth, 40%), $color-fifth),url(../../images/eggs-benidict.jpeg);
+    }
+
+    &--2 {
+      background-image: linear-gradient( to right bottom, lighten($color-sixth, 40%), $color-sixth), url(../../images/chicken.jpeg);
+    }
+    
+    &--3 {
+      background-image: linear-gradient( to right bottom, lighten($color-fourth, 40%), $color-fourth), url(../../images/brownie-dessert-cake-sweet-45202.jpeg);
+    }
+
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-align: right;
+    width: 50%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, 
+      rgba(#68edea, .65), 
+      rgba($color-fifth, .65));
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, 
+      rgba(#8fb961, .85), 
+      rgba($color-sixth, .85));
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom, 
+      rgba(#e645a8, .85), 
+      rgba($color-fourth, .85));
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey; 
+        }
+      }
+    }
   }
 }
