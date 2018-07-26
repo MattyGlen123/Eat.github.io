@@ -102,7 +102,7 @@
 
     &--3 {
       background-image: linear-gradient(to right bottom, 
-      rgba(#e645a8, .85), 
+      rgba(#ef88c8, .85), 
       rgba($color-fourth, .85));
     }
   }
@@ -136,16 +136,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+    text-align: center;
   }
 
   &__instructions {
     list-style-type: none;
-    text-align: left;
     color: $color-grey;
 
     li {
       font-size: 1.4rem;
       font-weight: 700;
+      text-align: left;
     }
 
     li::first-letter {

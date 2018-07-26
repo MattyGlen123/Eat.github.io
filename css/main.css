@@ -204,7 +204,7 @@ body {
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, white, #ff7738); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #f29fd2, #AE1774); }
+        background-image: linear-gradient(to right bottom, #fef9fc, #e645a8); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -220,7 +220,7 @@ body {
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, white, #ff7738), url(../images/chicken.jpeg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #f29fd2, #AE1774), url(../images/brownie-dessert-cake-sweet-45202.jpeg); }
+      background-image: linear-gradient(to right bottom, #fef9fc, #e645a8), url(../images/brownie-dessert-cake-sweet-45202.jpeg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -240,7 +240,7 @@ body {
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 56, 0.85)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(230, 69, 168, 0.85), rgba(174, 23, 116, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(239, 136, 200, 0.85), rgba(230, 69, 168, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -259,14 +259,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%; }
+    width: 90%;
+    text-align: center; }
   .card__instructions {
     list-style-type: none;
-    text-align: left;
     color: #777; }
     .card__instructions li {
       font-size: 1.4rem;
-      font-weight: 700; }
+      font-weight: 700;
+      text-align: left; }
     .card__instructions li::first-letter {
       font-size: 2rem;
       color: #000; }
