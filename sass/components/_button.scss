@@ -38,6 +38,15 @@
       background-color: $color-light;
     }
   }
+
+  &--salmon {
+    background-color: $color-secondary;
+    color: $color-light;
+    
+    &::after{
+      background-color: $color-secondary;
+    }
+  }
   
   &::after {
     content: "";

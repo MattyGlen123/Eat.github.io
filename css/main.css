@@ -94,6 +94,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-top-lrg {
+  margin-bottom: 8rem; }
+
 .u-margin-bottom-sml {
   margin-bottom: 1.5rem; }
 
@@ -137,6 +140,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #e8edf3; }
+
+.btn--salmon {
+  background-color: #b56969;
+  color: #e8edf3; }
+  .btn--salmon::after {
+    background-color: #b56969; }
 
 .btn::after {
   content: "";
@@ -193,7 +202,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #acf5f4, #17BEBB); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #cee0ba, #698F3F); }
+        background-image: linear-gradient(to right bottom, white, #ff7738); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #f29fd2, #AE1774); }
   .card:hover .card__side--front {
@@ -209,7 +218,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right top, #acf5f4, #17BEBB), url(../images/eggs-benidict.jpeg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #cee0ba, #698F3F), url(../images/chicken.jpeg); }
+      background-image: linear-gradient(to right bottom, white, #ff7738), url(../images/chicken.jpeg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #f29fd2, #AE1774), url(../images/brownie-dessert-cake-sweet-45202.jpeg); }
   .card__heading {
@@ -229,7 +238,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(104, 237, 234, 0.65), rgba(23, 190, 187, 0.65)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(143, 185, 97, 0.85), rgba(105, 143, 63, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 56, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(230, 69, 168, 0.85), rgba(174, 23, 116, 0.85)); }
   .card__details {
@@ -242,9 +251,25 @@ body {
         text-align: center;
         text-align: center;
         font-size: 1.4rem;
-        padding: 1rem; }
+        padding: .5rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #777; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; }
+  .card__instructions {
+    list-style-type: none;
+    text-align: left;
+    color: #777; }
+    .card__instructions li {
+      font-size: 1.4rem;
+      font-weight: 700; }
+    .card__instructions li::first-letter {
+      font-size: 2rem;
+      color: #000; }
 
 .composition {
   position: relative; }
@@ -306,7 +331,7 @@ body {
 
 .heading-seperator {
   text-align: center;
-  margin: 50px auto;
+  margin: 1rem auto 3rem auto;
   height: 5px;
   width: 30rem;
   background-color: #b56969; }
