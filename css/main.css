@@ -377,7 +377,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.8), rgba(181, 105, 105, 0.8)), url(../images/asia-carrot-chopsticks-357756.jpg);
+  background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.8), rgba(181, 105, 105, 0.8)), url("https://res.cloudinary.com/drldpyegp/image/upload/f_auto,q_auto:good/v1531929883/asia-carrot-chopsticks-357756.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -414,7 +414,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.5), rgba(181, 105, 105, 0.5)), url(../../images/cake-chocolate-chocolate-cake-132694.jpg);
+  background-image: linear-gradient(to right bottom, rgba(34, 38, 75, 0.5), rgba(181, 105, 105, 0.5)), url("https://res.cloudinary.com/drldpyegp/image/upload/f_auto,q_auto:eco/v1532702697/cake-chocolate-chocolate-cake-132694.jpg");
   background-size: cover;
   margin-top: 20rem;
   transform: skewY(-7deg); }
