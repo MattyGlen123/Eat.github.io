@@ -1,0 +1,48 @@
+.review {
+  width: 85%;
+  margin: 0 auto;
+  box-shadow: $box-shadow;
+  background-color: $color-light;
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: $default-font-size;
+
+  &--skew-right {  //skews review box in opposite directions for ladder effect 
+    transform: skewX(12deg);
+  }
+
+  &--skew-left {
+    transform: skewX(-12deg);
+
+  }
+
+  &--skew-right > * {
+    transform: skewX(-12deg);
+  }
+
+  &--skew-left > * {
+    transform: skewX(12deg);
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+
+    -webkit-clip-path: circle(50% at 50% 50%); 
+    clip-path: circle(50% at 50% 50%);
+
+    &--skew-right {
+      transform: translateX(-2rem) skewX(-12deg);
+    }
+
+    &--skew-left {
+      transform: translateX(-2rem) skewX(12deg);
+    }
+  }
+
+  &__img {
+    height: 100%;
+  }
+}
