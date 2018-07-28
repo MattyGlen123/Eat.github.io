@@ -105,10 +105,18 @@ body {
 .u-margin-bottom-lrg {
   margin-bottom: 8rem; }
 
-.heading__arrow {
-  font-size: 5rem;
-  transform-origin: top;
-  animation: swingArrow 8s infinite; }
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .25;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn--animate {
   animation: moveInBtn .5s ease-in .75s;
@@ -351,12 +359,13 @@ body {
     left: 7rem; }
 
 .review {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  background-color: #e8edf3;
+  background-color: rgba(181, 105, 105, 0.6);
   border-radius: 3px;
   padding: 6rem;
+  padding-left: 9rem;
   font-size: 1.8rem; }
   .review--skew-right {
     transform: skewX(12deg); }
@@ -372,13 +381,35 @@ body {
     float: left;
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%); }
+    clip-path: circle(50% at 50% 50%);
+    position: relative; }
     .review__shape--skew-right {
-      transform: translateX(-2rem) skewX(-12deg); }
+      transform: translateX(-3rem) skewX(-12deg); }
     .review__shape--skew-left {
-      transform: translateX(-2rem) skewX(12deg); }
+      transform: translateX(-3rem) skewX(12deg); }
   .review__img {
-    height: 100%; }
+    height: 100%;
+    transform: translateX(-3rem) scale(1.1);
+    backface-visibility: hidden;
+    transition: all .5s; }
+  .review__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #e8edf3;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .review:hover .review__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .review:hover .review__img {
+    transform: translateX(-3rem) scale(1);
+    filter: blur(3px) brightness(80%); }
 
 .row {
   max-width: 114rem;
@@ -456,4 +487,4 @@ body {
 
 .section-reviews {
   padding: 15rem 0;
-  background-color: #777; }
+  position: relative; }
