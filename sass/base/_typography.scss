@@ -9,7 +9,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, lighten($color-secondary, 20%), $color-secondary);
+  background-image: linear-gradient(to right, lighten($color-secondary, 10%), $color-secondary);
   display: inline-block;
   -webkit-background-clip: text;
   color:transparent;
