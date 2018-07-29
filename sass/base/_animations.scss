@@ -41,20 +41,3 @@
     transform: translateY(0);
   }
 }
-
-@keyframes swingArrow {
-  0% {
-    transform: rotate(60deg);
-    color: $color-heaven;
-  }
-  
-  50% {
-    transform: rotate(-60deg);
-    color: $color-hell;
-  }
-  
-	100% {
-    transform: rotate(60deg);
-    color: $color-heaven;
-		}
-}
