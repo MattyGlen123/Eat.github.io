@@ -1,24 +1,97 @@
 .form {
 
-
-
-  &__group:not(:last-child) {
-    margin-bottom: 2rem; 
+  // Input text and email section
+  &__group:not(:last-child) { 
+    // margin-bottom: 2rem; 
   }
 
   &__input {
     font-family: inherit;
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
-    border-radius: 2px;
-    background-color: rgba($color-light, .7);
-  }
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .3s;
 
-  &__input:focus {
-    outline: none;
+    &:focus {
+      outline: none;
+      box-shadow: $box-shadow;
+      border-bottom: 3px solid $color-sixth;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-dark-grey;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-hell;
+    }
   }
 
   &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+  }
 
+  &__input:placeholder-shown + &__label {  // Shows the label when the placeholder is hidden
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+    // radio button section
+  &__radio-group {
+    width: 49%;
+    display: inline-block;
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: $default-font-size;
+    cursor: pointer;
+    padding-left: 4rem; 
+    position: relative;
+  }
+
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid $color-sixth;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.5rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-sixth;
+      opacity: 0;
+      transition: all .2s; 
+    }
+  }
+
+  // Makes custom radio button button copy the radio-inputs
+  &__radio-input:checked + &__radio-label &__radio-button::after {  
+    opacity: 1;
   }
 }
