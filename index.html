@@ -15,15 +15,17 @@
 
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-    <lable class="navigation__button" for="nav-toggle">menu</lable>
+    <label class="navigation__button" for="nav-toggle">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
     <div class="navigation__background">&nbsp;</div>
     <nav class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#" class="navigation__link">Heaven Or Hell</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Your Benifits</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Best Recipes</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Recipe Reviews</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Ingredient Deliveries</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Heaven Or Hell</a></li>
+        <li class="navigation__item"><a href="#benifits" class="navigation__link"><span>02</span>Your Benifits</a></li>
+        <li class="navigation__item"><a href="#recipes" class="navigation__link"><span>03</span>Best Recipes</a></li>
+        <li class="navigation__item"><a href="#reviews" class="navigation__link"><span>04</span>Recipe Reviews</a></li>
+        <li class="navigation__item"><a href="#deliveries" class="navigation__link"><span>05</span>Ingredient Deliveries</a></li>
       </ul>
     </nav>
   </div>
@@ -42,7 +44,8 @@
   </header>
 
   <main>
-    <section class="section-hell-heaven">
+
+    <section class="section-hell-heaven" id="heaven/hell">
       <div class="u-center-text u-margin-bottom-med">
         <h2 class="heading-secondary">
           Recipes For Breakfast, Lunch and Dinner
@@ -71,7 +74,8 @@
         </div>
       </div>
     </section>
-    <section class="section-features">
+
+    <section class="section-features" id="benifits">
       <div class="row">
         <div class="col-1-of-4">
           <div class="feature-box">
@@ -115,7 +119,8 @@
           </div>
       </div>
     </section>
-    <section class="section-recipes">
+
+    <section class="section-recipes" id="recipes">
       <div class="u-center-text u-margin-bottom-sml">
         <h2 class="heading-secondary">
           Most Popular Recipes
@@ -247,7 +252,8 @@
           <a href="#" class="btn btn--salmon u-margin-top-lrg">More Recipes &rarr;</a>
         </div>
     </section>
-    <section class="section-reviews">
+
+    <section class="section-reviews" id="reviews">
 
       <div class="bg-video">
         <video class="bg-video__content" autoplay muted loop>
@@ -313,7 +319,7 @@
       </div>
     </section>
 
-    <section class="section-booking">
+    <section class="section-booking" id="deliveries">
       <div class="row">
         <div class="booking">
           <div class="booking__form">
