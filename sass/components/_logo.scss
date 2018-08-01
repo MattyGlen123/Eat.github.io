@@ -6,6 +6,7 @@
   transition: all .3s ease-in-out;
 
   &__logo {
+    display: block;
     font-size: 3rem;
     color: $color-tertiary;
     text-decoration: none;
@@ -17,8 +18,8 @@
 
   &--position {
     position: absolute;
-    top: 5%;
-    left: 2%;
+    top: 6rem;
+    left: 7rem;
     z-index: 1;
   }
 }
