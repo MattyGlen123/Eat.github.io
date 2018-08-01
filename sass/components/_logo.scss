@@ -1,12 +1,18 @@
 .logo-box { /* Adjust with media querys */
-  background-color: $color-tertiary;
+  display: inline-block;
   padding: 1rem;
   border-radius: 100%;
-  border: .5rem solid $color-secondary;
+  border: .5rem solid $color-tertiary;
+  transition: all .3s ease-in-out;
 
   &__logo {
     font-size: 3rem;
-    color: $color-secondary;
+    color: $color-tertiary;
+    text-decoration: none;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 .3rem $color-tertiary;
   }
 
   &--position {
@@ -14,5 +20,5 @@
     top: 5%;
     left: 2%;
     z-index: 1;
-  } 
+  }
 }

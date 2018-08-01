@@ -329,6 +329,19 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
 
+.footer__text-box {
+  padding: 6rem;
+  background-color: #0a0b16;
+  color: #e8edf3; }
+
+.footer__title {
+  font-size: 4rem;
+  font-weight: 300; }
+
+.footer__sub-title {
+  font-size: 3rem;
+  font-family: 'Pinyon Script', cursive; }
+
 .form__input {
   font-family: inherit;
   font-size: 1.5rem;
@@ -410,13 +423,17 @@ body {
 
 .logo-box {
   /* Adjust with media querys */
-  background-color: #e6cf8b;
+  display: inline-block;
   padding: 1rem;
   border-radius: 100%;
-  border: 0.5rem solid #b56969; }
+  border: 0.5rem solid #e6cf8b;
+  transition: all .3s ease-in-out; }
   .logo-box__logo {
     font-size: 3rem;
-    color: #b56969; }
+    color: #e6cf8b;
+    text-decoration: none; }
+  .logo-box:hover {
+    box-shadow: inset 0 0 0 0.3rem #e6cf8b; }
   .logo-box--position {
     position: absolute;
     top: 5%;
@@ -519,8 +536,7 @@ body {
 .heading-primary {
   color: #e8edf3;
   text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;

@@ -1,0 +1,17 @@
+.footer {
+  &__text-box {
+    padding: 6rem;
+    background-color: darken($color-primary, 15%);
+    color: $color-light; 
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  &__sub-title {
+    font-size: 3rem;
+    font-family: 'Pinyon Script', cursive;
+  }
+}

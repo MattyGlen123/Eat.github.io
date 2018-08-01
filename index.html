@@ -7,17 +7,33 @@
   <title>Eat | My Favourite Dishes</title>
   <link rel="stylesheet" href="css/icon-font.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Pinyon+Script" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 </head>
 
 <body>
-  <div class="logo-box logo-box--position">
-      <i class="logo-box__logo fas fa-lemon"></i>
+
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+    <lable class="navigation__button" for="nav-toggle">menu</lable>
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Heaven Or Hell</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Your Benifits</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Best Recipes</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Recipe Reviews</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Ingredient Deliveries</a></li>
+      </ul>
+    </nav>
   </div>
-  <header class="header">
+
+  <div class="logo-box logo-box--position">
+      <a href="#home"<i class="logo-box__logo fas fa-lemon"></i></a>
+  </div>
+  <header class="header" id="home">
     <div class="header__text-box">
-      <h1 class="heading-primary">
+      <h1 class="heading-primary u-margin-bottom-lrg">
         <span class="heading-primary--main">Cooking</span>
         <span class="heading-primary--sub">is good for the soul</span>
       </h1>
@@ -228,7 +244,7 @@
           </div>
         </div>
         <div class="u-center-text u-margin-bottom-med">
-          <a href="#" class="btn btn--salmon u-margin-top-lrg">Cover All Tours</a>
+          <a href="#" class="btn btn--salmon u-margin-top-lrg">More Recipes &rarr;</a>
         </div>
     </section>
     <section class="section-reviews">
@@ -344,6 +360,16 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="footer__text-box u-center-text ">
+        <div class="logo-box">
+            <a href="#home"<i class="logo-box__logo fas fa-lemon"></i></a>
+        </div>
+      <h1 class="footer__title u-margin-bottom-med">Let's build Beautiful,<br> meaningful things together.</h2>
+      <h4 class="footer__sub-title">Matthew Glen</h4>
+      <small class="footer__copyright"</small>&copy; 2018 Matthew Glen - 07803361392 Contact</small>
+    </div>
+  </footer>
 <script src="script.js"></script>
 </body>
 </html>
