@@ -7,9 +7,17 @@
   box-shadow: $box-shadow;
   transition: transform .2s;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
     background-color: $color-tertiary;
+
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
   }
 
   &__icon {

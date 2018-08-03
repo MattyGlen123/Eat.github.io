@@ -3,11 +3,19 @@
     padding: 6rem;
     background-color: darken($color-primary, 15%);
     color: $color-light; 
+
+    @include respond(phone) {
+      padding: 6rem 2rem;
+    }
   }
 
   &__title {
     font-size: 4rem;
     font-weight: 300;
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }
 
   &__sub-title {

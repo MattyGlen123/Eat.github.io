@@ -1,6 +1,10 @@
 .section-hell-heaven {
   background-color: $color-light;
   padding: 20rem 0 25rem;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-features {
@@ -17,16 +21,28 @@
     & > * {
       transform: skewY(7deg);
     }
+
+    @include respond(tab-port) {
+      padding: 10rem 0;
+    }
 }
 
 .section-recipes {
   background-color: $color-light;
   padding: 20rem 0 25rem;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-reviews {
   padding: 15rem 0;
   position: relative;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-booking {
