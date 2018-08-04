@@ -9,21 +9,42 @@
   padding-left: 9rem;
   font-size: $default-font-size;
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 6rem 3rem;
+    margin: 2rem auto; 
+  }
+
   &--skew-right {  //skews review box in opposite directions for ladder effect 
     transform: skewX(12deg);
+
+    @include respond(tab-port) {
+      transform: skewX(0);
+    }
   }
 
   &--skew-left {
     transform: skewX(-12deg);
 
+    @include respond(tab-port) {
+      transform: skewX(0);
+    }
   }
 
   &--skew-right > * { // skews all the child elements in the opposite direction so they're stright
     transform: skewX(-12deg);
+
+    @include respond(tab-port) {
+      transform: skewX(0);
+    }
   }
 
   &--skew-left > * {
     transform: skewX(12deg);
+
+    @include respond(tab-port) {
+      transform: skewX(0);
+    }
   }
 
   &__shape {
@@ -37,10 +58,18 @@
 
     &--skew-right {
       transform: translateX(-3rem) skewX(-12deg);
+
+      @include respond(tab-port) {
+        transform: translateX(-1rem) skewX(0);
+      }
     }
 
     &--skew-left {
       transform: translateX(-3rem) skewX(12deg);
+
+      @include respond(tab-port) {
+        transform: translateX(-1rem) skewX(0);
+      }
     }
   }
 

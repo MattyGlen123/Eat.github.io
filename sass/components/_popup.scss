@@ -27,6 +27,10 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(.2);
     transition: all .4s .2s;
+
+    @include respond(tab-port) {
+      width: 95%;
+    }
   }
 
   &:target &__content {
@@ -38,6 +42,13 @@
     width: 33.33333%;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond(phone) {
+      margin: 0 auto;
+      display: block;
+      width: 80%;
+      height: 50%;
+    }
   }
 
   &__right {
@@ -45,11 +56,22 @@
     display: table-cell;
     vertical-align: middle;
     padding: 4rem;
+
+    @include respond(phone) {
+      display: block;
+      width: 100%;
+      height: 50%;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(phone) {
+      display: inline-block;
+      width: 49%;
+    }
   }
 
   &__close {
