@@ -4,4 +4,8 @@
   height: 5px;
   width: 30rem;
   background-color: $color-secondary;
+
+  @include respond(phone) {
+    width: 20rem;
+  }
 }
