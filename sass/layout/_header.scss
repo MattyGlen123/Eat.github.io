@@ -4,7 +4,7 @@
                     rgba($color-primary, .8) 0%,
                     rgba($color-primary, .8) 50%,
                     transparent 50%),
-                    url('https://res.cloudinary.com/drldpyegp/image/upload/f_auto,q_auto:good/v1531929883/asia-carrot-chopsticks-357756.jpg');
+                    url('../images/sushi-sml.jpeg');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -12,17 +12,25 @@
   -webkit-clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
 
+  @media (min-resolution: 192dpi) and (min-width: 75em) {
+    background-image: linear-gradient(90deg,
+                      rgba($color-primary, .8) 0%,
+                      rgba($color-primary, .8) 50%,
+                      transparent 50%),
+                      url('../images/sushi-lrg.jpeg');
+  }
+
   @include respond(phone) {
     -webkit-clip-path: none;
     clip-path: none;
   }
 
-  @include respond(tab-land) {
+  @include respond(tab-land) { // On sml screens adds colour to other half of header to highlight title!
     background-image: linear-gradient(90deg,
                       rgba($color-primary, .8) 0%,
                       rgba($color-primary, .8) 50%,
                       rgba(darken($color-secondary, 20%), .8) 50%),
-                      url('https://res.cloudinary.com/drldpyegp/image/upload/f_auto,q_auto:good/v1531929883/asia-carrot-chopsticks-357756.jpg');
+                      url('../images/sushi-sml.jpeg');
   }
 
   &__text-box {
