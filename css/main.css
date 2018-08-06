@@ -220,6 +220,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
@@ -714,6 +715,11 @@ body {
   transition: all .3s;
   opacity: 0;
   visibility: hidden; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -908,10 +914,12 @@ body {
   background-image: linear-gradient(90deg, rgba(34, 38, 75, 0.8) 0%, rgba(34, 38, 75, 0.8) 50%, transparent 50%), url("../images/sushi-sml.jpeg");
   background-size: cover;
   background-position: top;
-  position: relative;
-  -webkit-clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%); }
-  @media (min-resolution: 192dpi) and (min-width: 75em) {
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%); } }
+  @media (min-resolution: 192dpi) and (min-width: 75em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
     .header {
       background-image: linear-gradient(90deg, rgba(34, 38, 75, 0.8) 0%, rgba(34, 38, 75, 0.8) 50%, transparent 50%), url("../images/sushi-lrg.jpeg"); } }
   @media (max-width: 37.5em) {
