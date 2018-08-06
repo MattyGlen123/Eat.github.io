@@ -465,13 +465,13 @@ html {
   62.5% equivalent to 10px = 1rem 
 
   */ }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
@@ -523,10 +523,10 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 2.5rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2rem; } }
   .heading-secondary:hover {
@@ -560,13 +560,13 @@ body {
 
 .u-margin-bottom-med {
   margin-bottom: 4rem !important; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-med {
       margin-bottom: 3rem; } }
 
 .u-margin-bottom-lrg {
   margin-bottom: 8rem !important; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-lrg {
       margin-bottom: 5rem; } }
 
@@ -747,7 +747,7 @@ body {
     .card__instructions li::first-letter {
       font-size: 2rem;
       color: #000; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
       border-radius: 5px;
@@ -788,7 +788,7 @@ body {
     z-index: 1;
     transition: all .2s;
     outline-offset: 2rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .composition__photo {
         float: left;
         position: relative;
@@ -796,68 +796,68 @@ body {
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p1 {
           top: 1rem;
           left: -15%;
           transform: scale(1.8); } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p1 {
           transform: scale(1.2);
           left: -5%; } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p2 {
           top: 0rem;
           transform: scale(2);
           z-index: 100; } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p2 {
           transform: scale(1.4); } }
     .composition__photo--p3 {
       left: 15%;
       top: 12rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
           top: 1rem;
           transform: scale(1.8); } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p3 {
           transform: scale(1.2);
           left: 5%; } }
     .composition__photo--p4 {
       left: 0;
       top: -2rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p4 {
           top: 1rem;
           left: -15%;
           transform: scale(1.8); } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p4 {
           transform: scale(1.2);
           left: -5%; } }
     .composition__photo--p5 {
       right: 0;
       top: 2rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p5 {
           top: 0;
           transform: scale(2);
           z-index: 100; } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p5 {
           transform: scale(1.4); } }
     .composition__photo--p6 {
       left: 15%;
       top: 12rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p6 {
           top: 1rem;
           transform: scale(1.8); } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p6 {
           transform: scale(1.2);
           left: 5%; } }
@@ -880,13 +880,13 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .2s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03);
     background-color: #e6cf8b; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .feature-box:hover {
         padding: 2rem; } }
   .feature-box__icon {
@@ -901,14 +901,14 @@ body {
   padding: 6rem;
   background-color: #0a0b16;
   color: #e8edf3; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer__text-box {
       padding: 6rem 2rem; } }
 
 .footer__title {
   font-size: 4rem;
   font-weight: 300; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer__title {
       font-size: 3rem; } }
 
@@ -927,7 +927,7 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .form__input {
       width: 100%; } }
   .form__input:focus {
@@ -955,7 +955,7 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .form__radio-group {
       margin: 1rem;
       width: 90%; } }
@@ -1001,7 +1001,7 @@ body {
   height: 5px;
   width: 30rem;
   background-color: #b56969; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-seperator {
       width: 20rem; } }
 
@@ -1024,7 +1024,7 @@ body {
     top: 6rem;
     left: 7rem;
     z-index: 1; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .logo-box--position {
         top: 1rem;
         left: 1rem; } }
@@ -1044,7 +1044,7 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   text-align: center;
   cursor: pointer; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__button {
       top: 1rem;
       right: 1rem; } }
@@ -1059,7 +1059,7 @@ body {
   background-image: radial-gradient(#777fc2, #22264b);
   z-index: 100;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 1.5rem;
       right: 1.5rem; } }
@@ -1183,7 +1183,7 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.2);
     transition: all .4s .2s; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .popup__content {
         width: 95%; } }
   .popup:target .popup__content {
@@ -1193,7 +1193,7 @@ body {
     width: 33.33333%;
     display: table-cell;
     vertical-align: middle; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .popup__left {
         margin: 0 auto;
         display: block;
@@ -1204,7 +1204,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     padding: 4rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .popup__right {
         display: block;
         width: 100%;
@@ -1212,7 +1212,7 @@ body {
   .popup__img {
     display: block;
     width: 100%; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .popup__img {
         display: inline-block;
         width: 49%; } }
@@ -1250,29 +1250,29 @@ body {
   padding: 6rem;
   padding-left: 9rem;
   font-size: 1.8rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .review {
       width: 100%;
       padding: 6rem 3rem;
       margin: 2rem auto; } }
   .review--skew-right {
     transform: skewX(12deg); }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .review--skew-right {
         transform: skewX(0); } }
   .review--skew-left {
     transform: skewX(-12deg); }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .review--skew-left {
         transform: skewX(0); } }
   .review--skew-right > * {
     transform: skewX(-12deg); }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .review--skew-right > * {
         transform: skewX(0); } }
   .review--skew-left > * {
     transform: skewX(12deg); }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .review--skew-left > * {
         transform: skewX(0); } }
   .review__shape {
@@ -1285,12 +1285,12 @@ body {
     position: relative; }
     .review__shape--skew-right {
       transform: translateX(-3rem) skewX(-12deg); }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .review__shape--skew-right {
           transform: translateX(-1rem) skewX(0); } }
     .review__shape--skew-left {
       transform: translateX(-3rem) skewX(12deg); }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .review__shape--skew-left {
           transform: translateX(-1rem) skewX(0); } }
   .review__img {
@@ -1320,13 +1320,13 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
   .row::after {
@@ -1335,12 +1335,12 @@ body {
     clear: both; }
   .row [class^="col-"] {
     float: left; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
@@ -1365,14 +1365,14 @@ body {
     .header {
       -webkit-clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%); } }
-  @media (min-resolution: 192dpi) and (min-width: 75em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 75em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
     .header {
       background-image: linear-gradient(90deg, rgba(34, 38, 75, 0.8) 0%, rgba(34, 38, 75, 0.8) 50%, transparent 50%), url("../images/sushi-lrg.jpeg"); } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: none;
       clip-path: none; } }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .header {
       background-image: linear-gradient(90deg, rgba(34, 38, 75, 0.8) 0%, rgba(34, 38, 75, 0.8) 50%, rgba(123, 61, 61, 0.8) 50%), url("../images/sushi-sml.jpeg"); } }
   .header__text-box {
@@ -1381,7 +1381,7 @@ body {
     left: 30%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .header__text-box {
         top: 50%;
         left: 50%; } }
@@ -1396,7 +1396,7 @@ body {
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation: moveInRight 1s ease-in; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 2rem;
         font-size: 5rem; } }
@@ -1406,7 +1406,7 @@ body {
     font-weight: 700;
     letter-spacing: 1.4rem;
     animation: moveInRight 1s ease-in; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 1rem;
         font-size: 1.5rem; } }
@@ -1414,7 +1414,7 @@ body {
 .section-hell-heaven {
   background-color: #e8edf3;
   padding: 20rem 0 25rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-hell-heaven {
       padding: 10rem 0; } }
 
@@ -1424,26 +1424,26 @@ body {
   background-size: cover;
   margin-top: 20rem;
   transform: skewY(-7deg); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-features {
       background-image: linear-gradient(to right bottom, #22264b, #b56969); } }
   .section-features > * {
     transform: skewY(7deg); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
 
 .section-recipes {
   background-color: #e8edf3;
   padding: 20rem 0 25rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-recipes {
       padding: 10rem 0; } }
 
 .section-reviews {
   padding: 15rem 0;
   position: relative; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-reviews {
       padding: 10rem 0; } }
 
@@ -1456,18 +1456,18 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .booking {
       background-image: linear-gradient(105deg, rgba(232, 237, 243, 0.8) 0%, rgba(232, 237, 243, 0.8) 70%, transparent 70%), url(../images/cooking.jpg); } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .booking {
       background-image: linear-gradient(105deg, rgba(232, 237, 243, 0.8) 0%, rgba(232, 237, 243, 0.8) 100%), url(../images/cooking.jpg); } }
   .booking__form {
     width: 50%;
     padding: 6rem; }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .booking__form {
         width: 70%; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .booking__form {
         width: 100%; } }
